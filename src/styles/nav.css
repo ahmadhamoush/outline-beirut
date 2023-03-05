@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 .scrollBarContainer {
-    background-color: white;
+    background-color: #ff9d00;
     height: 5px;
     position: absolute;
     bottom: 0;
@@ -11,7 +11,7 @@
 }
 
 .scrollBar {
-    background-color: white;
+    background-color: #ff9d00;
     height: 5px;
     border-radius: 10px;
 }
