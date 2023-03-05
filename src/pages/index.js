@@ -4,6 +4,7 @@ import Landing from "@/components/Landing"
 import Menu from "@/components/Menu"
 import Location from "@/components/Location"
 import Head from "next/head"
+import Navbar from "@/components/Navbar"
 export default function Home() {
   return (
     <>
@@ -15,10 +16,13 @@ export default function Home() {
       </Head>
 
       <div className="appContainer">
-      <Landing />
+        <Navbar />
+     <div className="content">
+     <Landing />
       <Description />
       <Menu />
       <Location />
+     </div>
       </div>
     </>
   )

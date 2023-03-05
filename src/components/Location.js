@@ -6,7 +6,7 @@ function Location (){
         styles: [{
             elementType: "geometry",
             stylers: [{
-              color: "#1e1e1e"
+              color: "#000000"
             }]
           },
           {
@@ -53,7 +53,7 @@ function Location (){
             featureType: "road",
             elementType: "geometry",
             stylers: [{
-              color: "#1e1e1e"
+              color: "#000000"
             }],
           },
           {

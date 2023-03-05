@@ -1,12 +1,15 @@
 .appContainer {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     overflow-x: hidden;
     background-color: black;
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/walls.webp');
     /* background-image: url('/walls.webp'); */
 }
+
+.content {}
 
 body {
     scroll-snap-type: y mandatory;
@@ -38,7 +41,7 @@ body::-webkit-scrollbar {
 }
 
 .header {
-    /* position: sticky;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +51,7 @@ body::-webkit-scrollbar {
     height: 90px;
     z-index: 111;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
+    border-bottom-right-radius: 10px;
 }
 
 .logo {
@@ -445,8 +448,8 @@ video {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     border-radius: 20px;
     margin: 30px;
 }
@@ -457,23 +460,23 @@ video {
     content: '';
     width: 50px;
     height: 50px;
-    background-color: white;
+    background-color: black;
 }
 
 .locationContainer::before {
     top: 0;
     right: 0;
     border-radius: 0px 20px 0px 50px;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
 }
 
 .locationContainer::after {
     bottom: 0;
     left: 0;
     border-radius: 0px 50px 0px 20px;
-    border-bottom: 3px solid black;
-    border-left: 3px solid black;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
 }
 
 .map {
