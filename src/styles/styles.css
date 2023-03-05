@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
 
 .slide1 {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/landing.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/landing.webp');
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
@@ -56,7 +56,7 @@ body::-webkit-scrollbar {
 
 .descContainer {
     margin: 20px 0;
-    background-image: url('/scribble.png');
+    background-image: url('/scribble.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -249,38 +249,36 @@ ul {
 
 .itemContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 20px;
 }
 
 .imgContainer {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
     animation: 2s scale-anim ease-in-out forwards;
-    margin: 10px;
     -webkit-box-shadow: 3px 3px 5px 6px #eee;
-    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #eee;
-    /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 5px 6px #eee;
-    object-fit: cover;
     border-radius: 50%;
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
 }
 
+.imgContainer .menuWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-/* .menuContainer .leftArrow,
-.menuContainer .rightArrow {
-    transition: 0.5s ease-in-out;
-    color: black;
-    font-size: 40px;
-    cursor: pointer;
-} */
+.imgContainer .menuImg {
+    object-fit: cover;
+}
 
 .title {
     font-family: 'Montserrat', sans-serif;

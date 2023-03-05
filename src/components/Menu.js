@@ -1,5 +1,4 @@
 import { AnimationOnScroll } from 'react-animation-on-scroll'
-import {BsArrowLeft,BsArrowRight} from 'react-icons/bs'
 import Image from 'next/image'
 function Menu(){
 return(
@@ -10,19 +9,37 @@ return(
      </AnimationOnScroll>
       <div>
     
+        <div className="itemContainer">  
+        <div className='menuWrapper'>
         <AnimationOnScroll animateIn='animate__fadeInRight'>
         <h2 className="name">Item Name</h2>
      </AnimationOnScroll>
-        <div className="itemContainer">  
             <AnimationOnScroll animateIn='animate__zoomIn'>
-            <img src='/dish1.png' className='imgContainer'/>
+              <div className='imgContainer'>
+          <Image alt='dish' className='menuImg' src='/dish1.webp' sizes='100%' fill/>
+              </div>
         </AnimationOnScroll>
+        </div>
+        <div className='menuWrapper'>
+        <AnimationOnScroll animateIn='animate__fadeInRight'>
+        <h2 className="name">Item Name</h2>
+     </AnimationOnScroll>
         <AnimationOnScroll animateIn='animate__zoomIn'>
-            <img src='/dish2.png' className='imgContainer'/>
+              <div className='imgContainer'>
+          <Image alt='dish' className='menuImg' src='/dish2.webp' sizes='100%' fill/>
+              </div>
         </AnimationOnScroll>
+        </div>
+        <div className='menuWrapper'>
+        <AnimationOnScroll animateIn='animate__fadeInRight'>
+        <h2 className="name">Item Name</h2>
+     </AnimationOnScroll>
         <AnimationOnScroll animateIn='animate__zoomIn'>
-            <img src='/dish3.png' className='imgContainer'/>
+              <div className='imgContainer'>
+          <Image alt='dish' className='menuImg' src='/dish3.webp' sizes='100%' fill/>
+              </div>
         </AnimationOnScroll>
+        </div>
         </div>
       </div>
     </div>

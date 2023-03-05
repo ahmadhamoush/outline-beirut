@@ -139,10 +139,10 @@ function Location (){
        <div className="mapSlide">
         <div className='burgerContainer'>
        <AnimationOnScroll className='syringe' animateIn='animate__fadeInDown'>
-        <Image alt='syringe' src='/syringe.png' width={100} height={150}/>
+        <Image alt='syringe' src='/syringe.webp' width={100} height={150}/>
         </AnimationOnScroll>
        <AnimationOnScroll animateIn="animate__fadeInUp">
-        <Image  alt="burger" className='burger' src='/burger.png' width={140} height={250}/>
+        <Image  alt="burger" className='burger' src='/burger.webp' width={140} height={250}/>
         </AnimationOnScroll>
     
         </div>
