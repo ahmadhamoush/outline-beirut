@@ -1,6 +1,6 @@
 import GoogleMapReact from "google-map-react"
-import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import Image from "next/image";
 function Location (){
     const options ={
         styles: [{
@@ -137,15 +137,21 @@ function Location (){
       }
     return(
        <div className="mapSlide">
-        <AnimationOnScroll animateIn="animate__fadeInUp">
-        <div className="burgerContainer"><Image  alt="burger" className='burger' src='/burger.png' width={140} height={250}/></div>
+        <div className='burgerCnotainer'>
+       <AnimationOnScroll className='syringe' animateIn='animate__fadeInDown'>
+        <Image alt='syringe' src='/syringe.png' width={100} height={150}/>
         </AnimationOnScroll>
+       <AnimationOnScroll animateIn="animate__fadeInUp">
+        <Image  alt="burger" className='burger' src='/burger.png' width={140} height={250}/>
+        </AnimationOnScroll>
+    
+        </div>
          <div className="locationContainer">
         <div className="location">
-            <AnimationOnScroll animateIn="animate__flipInX">
+            <AnimationOnScroll animateIn="animate__fadeInRight">
             <h2>Experience Our Restaurant in Person</h2>
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn="animate__flipInX">
+            <AnimationOnScroll animateIn="animate__fadeInRight">
             <p>Come and experience the delicious flavors of our authentic 2d restaurant, expertly prepared by our skilled chefs using only the freshest ingredients. Plus, with our cozy atmosphere and friendly service, youll feel right at home at
             our restaurant. Dont miss out ... make your reservation today!</p>
             </AnimationOnScroll>

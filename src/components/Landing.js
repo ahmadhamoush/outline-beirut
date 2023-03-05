@@ -1,12 +1,11 @@
 import {FaFacebookF} from "react-icons/fa";
 import {BsTwitter,BsInstagram,BsFillTelephoneFill} from 'react-icons/bs'
 import { TfiAngleDoubleDown } from "react-icons/tfi";
-import Navbar from "./Navbar"
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 function  Landing (){
     return(
         <div className="item slide1">
-            <Navbar />
+       
             <span className="phone"><BsFillTelephoneFill/></span>
             <div className="slide-desc">
                 <AnimationOnScroll animateIn="animate__backInDown">

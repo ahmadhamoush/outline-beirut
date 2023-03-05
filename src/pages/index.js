@@ -5,6 +5,8 @@ import Menu from "@/components/Menu"
 import Location from "@/components/Location"
 import Head from "next/head"
 import Navbar from "@/components/Navbar"
+import { Parallax } from "react-scroll-parallax"
+import { ParallaxProvider } from "react-scroll-parallax"
 export default function Home() {
   return (
     <>
@@ -18,10 +20,17 @@ export default function Home() {
       <div className="appContainer">
         <Navbar />
      <div className="content">
-     <Landing />
+      <ParallaxProvider>
+      <Landing />
+      <Parallax speed={-10}>
       <Description />
       <Menu />
+      </Parallax>
+
       <Location />
+      
+
+      </ParallaxProvider>
      </div>
       </div>
     </>

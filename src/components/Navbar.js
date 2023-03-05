@@ -7,7 +7,7 @@ function  Navbar (){
         const MaxHeight =
           document.documentElement.scrollHeight -
           document.documentElement.clientHeight;
-        const ScrollPercent = (Scrolled / MaxHeight) * 100;
+        const ScrollPercent = (Scrolled / MaxHeight) *100;
         setScroll(ScrollPercent);
       };
       useEffect(()=>{
@@ -33,7 +33,6 @@ function  Navbar (){
           </div>
             <div style={{ width: `${scroll}%` }} className="scrollBarContainer">
                 <div className="scrollBar">
-                    <p>Discover a world of flavor</p>
                 </div>
             </div>
             </div>

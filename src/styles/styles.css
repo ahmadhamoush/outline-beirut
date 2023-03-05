@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     overflow-x: hidden;
+    align-items: center;
     background-color: black;
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/walls.webp');
@@ -44,8 +45,7 @@ body::-webkit-scrollbar {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    align-items: flex-end;
     background-color: rgba(0, 0, 0, 1);
     width: 100%;
     height: 90px;
@@ -277,26 +277,27 @@ ul {
     width: 300px;
     height: 300px;
     animation: 2s scale-anim ease-in-out forwards;
-    background-image: url('/dish1.png');
     margin: 10px;
     -webkit-box-shadow: 3px 3px 5px 6px #eee;
     /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #eee;
     /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 5px 6px #eee;
+    object-fit: cover;
     border-radius: 50%;
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
-.menuContainer .leftArrow,
+
+/* .menuContainer .leftArrow,
 .menuContainer .rightArrow {
     transition: 0.5s ease-in-out;
     color: black;
     font-size: 40px;
     cursor: pointer;
-}
+} */
 
 .title {
     font-family: 'Montserrat', sans-serif;
@@ -329,13 +330,12 @@ ul {
 .menuContainer {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     color: black;
     background-color: white;
     padding: 20px;
-    margin: 30px;
     border-radius: 20px;
     max-width: 100%;
     height: 70%;
@@ -415,13 +415,6 @@ video {
     color: black;
 }
 
-.syringe {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-}
-
 
 /* Location */
 
@@ -450,33 +443,6 @@ video {
     align-items: center;
     color: black;
     background-color: white;
-    border-radius: 20px;
-    margin: 30px;
-}
-
-.locationContainer::before,
-.locationContainer::after {
-    position: absolute;
-    content: '';
-    width: 50px;
-    height: 50px;
-    background-color: black;
-}
-
-.locationContainer::before {
-    top: 0;
-    right: 0;
-    border-radius: 0px 20px 0px 50px;
-    border-top: 3px solid white;
-    border-right: 3px solid white;
-}
-
-.locationContainer::after {
-    bottom: 0;
-    left: 0;
-    border-radius: 0px 50px 0px 20px;
-    border-bottom: 3px solid white;
-    border-left: 3px solid white;
 }
 
 .map {
@@ -487,19 +453,16 @@ video {
 .mapSlide {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .burgerContainer {
-    position: relative;
-    height: 130px;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-}
-
-.burger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-bottom-left-radius: 20px;
 }
 
 @media (max-width:650px) {
@@ -527,6 +490,9 @@ video {
     }
     .name {
         font-size: 5vw;
+    }
+    .itemContainer {
+        flex-direction: column;
     }
 }
 
