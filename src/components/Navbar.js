@@ -1,6 +1,19 @@
 import Image from "next/image"
-
+import { useState,useEffect } from "react";
 function  Navbar (){
+    const [scroll, setScroll] = useState(0);
+    const onScroll = () => {
+        const Scrolled = document.documentElement.scrollTop;
+        const MaxHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        const ScrollPercent = (Scrolled / MaxHeight) * 100;
+        setScroll(ScrollPercent);
+      };
+      useEffect(()=>{
+        window.addEventListener("scroll", onScroll);
+      },[])
+   
     return(
             <div className="header">
              <Image alt="logo" src='/logo.webp' className="logo" width={120} height={70}/>
@@ -18,6 +31,11 @@ function  Navbar (){
             </nav>
           </div>
           </div>
+            <div style={{ width: `${scroll}%` }} className="scrollBarContainer">
+                <div className="scrollBar">
+                    <p>Discover a world of flavor</p>
+                </div>
+            </div>
             </div>
     )
 }
