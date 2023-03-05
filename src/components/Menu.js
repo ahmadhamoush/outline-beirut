@@ -16,7 +16,7 @@ return(
      </AnimationOnScroll>
             <AnimationOnScroll animateIn='animate__zoomIn'>
               <div className='imgContainer'>
-          <Image alt='dish' className='menuImg' src='/dish1.webp' sizes='100%' fill/>
+          <Image blurDataURL='/blur.png' alt='dish' className='menuImg' src='/dish1.webp' sizes='100%' fill/>
               </div>
         </AnimationOnScroll>
         </div>
@@ -26,7 +26,7 @@ return(
      </AnimationOnScroll>
         <AnimationOnScroll animateIn='animate__zoomIn'>
               <div className='imgContainer'>
-          <Image alt='dish' className='menuImg' src='/dish2.webp' sizes='100%' fill/>
+          <Image blurDataURL='/blur.png' alt='dish' className='menuImg' src='/dish2.webp' sizes='100%' fill/>
               </div>
         </AnimationOnScroll>
         </div>
@@ -36,7 +36,7 @@ return(
      </AnimationOnScroll>
         <AnimationOnScroll animateIn='animate__zoomIn'>
               <div className='imgContainer'>
-          <Image alt='dish' className='menuImg' src='/dish3.webp' sizes='100%' fill/>
+          <Image blurDataURL='/blur.png' alt='dish' className='menuImg' src='/dish3.webp' sizes='100%' fill/>
               </div>
         </AnimationOnScroll>
         </div>
@@ -67,7 +67,7 @@ return(
         <Image alt='syringe' src='/syringe.webp' width={100} height={150}/>
         </AnimationOnScroll>
        <AnimationOnScroll animateIn="animate__fadeInUp">
-        <Image  alt="burger" className='burger' src='/burger.webp' width={140} height={250}/>
+        <Image alt="burger" className='burger' src='/burger.webp' width={140} height={250}/>
         </AnimationOnScroll>
     
         </div>
