@@ -15,6 +15,7 @@ export default function Home() {
         <title>Outline Beirut</title>
         <meta name="description" content="Outline is a newly opened spot in the heart of Gemmayze, and while it may seem like any other new discovery, this restaurant has quite the unique twist. Everything is in 2D! Dining at this spot will give your the full comic book experience<" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="11iyo6RsmYzfBQ-SsK3lqNM69yjjT-vEOAt5DTbDmaE" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
