@@ -16,7 +16,7 @@ function  Landing (){
                 <h3>Beirut</h3>
                 </AnimationOnScroll>
                 <AnimationOnScroll animateIn="animate__backInDown">
-                <p>LEBANON'S FIRST 2D RESTAURANT</p>
+                <p>LEBANONS FIRST 2D RESTAURANT</p>
                 </AnimationOnScroll>
             <ul className="wrapper">
             <AnimationOnScroll animateIn="animate__backInDown">

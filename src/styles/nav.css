@@ -52,7 +52,7 @@ h1 {
 .menu-icon:checked+label,
 .menu-icon:not(:checked)+label {
     position: fixed;
-    top: 53px;
+    top: 33px;
     right: 65px;
     display: block;
     width: 30px;
@@ -112,7 +112,7 @@ h1 {
 
 .nav {
     position: fixed;
-    top: 33px;
+    top: 15px;
     right: 50px;
     display: block;
     width: 60px;

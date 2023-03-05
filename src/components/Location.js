@@ -6,7 +6,7 @@ function Location (){
         styles: [{
             elementType: "geometry",
             stylers: [{
-              color: "#1E1E1E"
+              color: "#000000"
             }]
           },
           {
@@ -53,7 +53,7 @@ function Location (){
             featureType: "road",
             elementType: "geometry",
             stylers: [{
-              color: "#1E1E1E"
+              color: "#000000"
             }],
           },
           {
@@ -138,7 +138,7 @@ function Location (){
     return(
        <div className="mapSlide">
         <AnimationOnScroll animateIn="animate__fadeInUp">
-        <div className="burgerContainer"><Image className='burger' src='/burger.png' width={140} height={250}/></div>
+        <div className="burgerContainer"><Image  alt="burger" className='burger' src='/burger.png' width={140} height={250}/></div>
         </AnimationOnScroll>
          <div className="locationContainer">
         <div className="location">
@@ -146,8 +146,8 @@ function Location (){
             <h2>Experience Our Restaurant in Person</h2>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__flipInX">
-            <p>Come and experience the delicious flavors of our authentic 2d restaurant, expertly prepared by our skilled chefs using only the freshest ingredients. Plus, with our cozy atmosphere and friendly service, you'll feel right at home at
-            our restaurant. Don't miss out – make your reservation today!</p>
+            <p>Come and experience the delicious flavors of our authentic 2d restaurant, expertly prepared by our skilled chefs using only the freshest ingredients. Plus, with our cozy atmosphere and friendly service, youll feel right at home at
+            our restaurant. Dont miss out ... make your reservation today!</p>
             </AnimationOnScroll>
      
         </div>

@@ -3,7 +3,7 @@ import Image from "next/image"
 function  Navbar (){
     return(
             <div className="header">
-             <Image src='/logo.webp' className="logo" width={160} height={90}/>
+             <Image alt="logo" src='/logo.webp' className="logo" width={120} height={70}/>
           <div className="container">
           <div className="navContainer">
             <input className="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />

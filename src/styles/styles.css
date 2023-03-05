@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    background-color: #1E1E1E;
+    background-color: black;
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/walls.webp');
     /* background-image: url('/walls.webp'); */
@@ -13,6 +13,7 @@ body {
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    background-color: black;
 }
 
 body::-webkit-scrollbar {
@@ -37,19 +38,23 @@ body::-webkit-scrollbar {
 }
 
 .header {
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 1);
     width: 100%;
+    height: 90px;
+    z-index: 111;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .logo {
     position: fixed;
-    top: 10px;
-    left: 20px;
+    top: 0px;
+    left: 10px;
 }
 
 .descContainer {
@@ -113,7 +118,7 @@ ul {
 .wrapper .icon {
     position: relative;
     background: #ffffff;
-    color: #1E1E1E;
+    color: black;
     border-radius: 50%;
     padding: 15px;
     margin: 10px;
@@ -193,7 +198,7 @@ ul {
     bottom: 15px;
     right: 15px;
     border-radius: 50%;
-    background-color: #1E1E1E;
+    background-color: black;
     font-size: 25px;
     line-height: 25px;
     padding: 20px;
@@ -205,7 +210,7 @@ ul {
 
 .phone:hover,
 .phone:active {
-    color: #1E1E1E;
+    color: black;
     background-color: white;
     animation: 0.5s phoneAnim ease-in-out;
 }
@@ -284,7 +289,7 @@ ul {
 .menuContainer .leftArrow,
 .menuContainer .rightArrow {
     transition: 0.5s ease-in-out;
-    color: #1E1E1E;
+    color: black;
     font-size: 40px;
     cursor: pointer;
 }
@@ -294,12 +299,12 @@ ul {
     font-weight: 800;
     font-size: 7vw;
     line-height: 1;
-    color: #1E1E1E;
+    color: black;
     margin: 20px;
     text-align: center;
     color: transparent;
     -webkit-text-stroke: 2px transparent;
-    -webkit-text-fill-color: #1E1E1E;
+    -webkit-text-fill-color: black;
 }
 
 .name {
@@ -312,8 +317,8 @@ ul {
     .title {
         font-size: 7vw;
         -webkit-text-stroke: 2px transparent;
-        -webkit-text-fill-color: #1E1E1E;
-        color: #1E1E1E;
+        -webkit-text-fill-color: black;
+        color: black;
     }
 }
 
@@ -323,7 +328,7 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: #1E1E1E;
+    color: black;
     background-color: white;
     padding: 20px;
     margin: 30px;
@@ -338,7 +343,7 @@ ul {
     content: '';
     width: 50px;
     height: 50px;
-    background-color: #1E1E1E;
+    background-color: black;
 }
 
 .menuContainer::before {
@@ -389,7 +394,7 @@ video {
 
 .viewMenu .menu {
     color: white;
-    background-color: #1E1E1E;
+    background-color: black;
     border: 1px solid white;
     padding: 20px;
     font-size: 20px;
@@ -403,7 +408,7 @@ video {
 .viewMenu .menu:hover,
 .viewMenu .menu:active {
     background-color: white;
-    color: #1E1E1E;
+    color: black;
 }
 
 .syringe {
@@ -423,7 +428,7 @@ video {
     align-items: center;
     text-align: center;
     margin: 20px;
-    padding: 20px;
+    padding: 30px 20px;
     flex: 1;
 }
 
@@ -440,7 +445,7 @@ video {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: #1E1E1E;
+    background-color: black;
     border-radius: 20px;
     margin: 30px;
 }
@@ -458,16 +463,16 @@ video {
     top: 0;
     right: 0;
     border-radius: 0px 20px 0px 50px;
-    border-top: 3px solid #1E1E1E;
-    border-right: 3px solid #1E1E1E;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
 }
 
 .locationContainer::after {
     bottom: 0;
     left: 0;
     border-radius: 0px 50px 0px 20px;
-    border-bottom: 3px solid #1E1E1E;
-    border-left: 3px solid #1E1E1E;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
 }
 
 .map {

@@ -38,13 +38,13 @@ return(
           </AnimationOnScroll>
           <AnimationOnScroll animateIn='animate__zoomIn'>
           <div className="videoContainer">
-              <video loop muted autobuffer playsInline autoPlay preload="auto">
+              <video loop muted  playsInline autoPlay preload="auto">
                 <source src="/burger.mp4" />
               </video>
               </div>
         </AnimationOnScroll>
         <AnimationOnScroll className='syringe' animateIn='animate__fadeInDown'>
-        <Image  src='/syringe.png' width={100} height={150}/>
+        <Image alt='syringe' src='/syringe.png' width={100} height={150}/>
         </AnimationOnScroll>
           
        
