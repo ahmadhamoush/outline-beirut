@@ -38,7 +38,7 @@ body::-webkit-scrollbar {
 }
 
 .header {
-    position: fixed;
+    /* position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,13 +48,14 @@ body::-webkit-scrollbar {
     height: 90px;
     z-index: 111;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
 }
 
 .logo {
     position: fixed;
     top: 0px;
     left: 10px;
+    z-index: 111;
 }
 
 .descContainer {
