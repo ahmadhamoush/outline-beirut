@@ -6,7 +6,7 @@ function  Landing (){
     return(
         <div className="item slide1">
        
-            <span className="phone"><BsFillTelephoneFill/></span>
+            <button className="phone"><BsFillTelephoneFill/></button>
             <div className="slide-desc">
                 <AnimationOnScroll animateIn="animate__backInDown">
                 <h2>OUTLINE</h2>

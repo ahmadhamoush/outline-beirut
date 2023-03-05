@@ -7,6 +7,7 @@ import Head from "next/head"
 import Navbar from "@/components/Navbar"
 import { Parallax } from "react-scroll-parallax"
 import { ParallaxProvider } from "react-scroll-parallax"
+import ScrollToTop from "react-scroll-to-top";
 export default function Home() {
   return (
     <>
@@ -26,10 +27,8 @@ export default function Home() {
       <Description />
       <Menu />
       </Parallax>
-
       <Location />
-      
-
+      <ScrollToTop smooth />
       </ParallaxProvider>
      </div>
       </div>
