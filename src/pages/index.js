@@ -26,8 +26,8 @@ export default function Home() {
       <Landing />
       <Parallax speed={-10}>
       <Description />
-      <Menu />
       </Parallax>
+      <Menu />
       <Location />
       <ScrollToTop smooth />
       </ParallaxProvider>

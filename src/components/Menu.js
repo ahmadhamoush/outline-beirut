@@ -1,5 +1,6 @@
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import Image from 'next/image'
+import { Parallax } from "react-scroll-parallax"
 function Menu(){
 return(
     <div className="item slide4">
@@ -8,7 +9,6 @@ return(
      <h2 className="title">Special Items</h2>
      </AnimationOnScroll>
       <div>
-    
         <div className="itemContainer">  
         <div className='menuWrapper'>
         <AnimationOnScroll animateIn='animate__fadeInRight'>
@@ -43,6 +43,8 @@ return(
         </div>
       </div>
     </div>
+
+    <Parallax speed={-10}>
     <div className='viewMenu'>
     <AnimationOnScroll animateIn='animate__fadeInLeft'>
     <h3>The Traditional Way</h3>
@@ -60,6 +62,7 @@ return(
               </div>
         </AnimationOnScroll>
     </div>
+      </Parallax>
   </div>
 
 )
